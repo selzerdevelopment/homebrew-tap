@@ -2,28 +2,28 @@
 class Hoplogs < Formula
   desc "HopLogs from the terminal: status, incidents, pages, beacons and heartbeats"
   homepage "https://hoplogs.io"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://downloads.hoplogs.io/cli/v0.1.2/hoplogs_0.1.2_darwin_arm64.tar.gz"
-      sha256 "b9d22698f06573dd1288d9be812e04254cf0051c2f7638f5093c27df7d6b0a04"
+      url "https://downloads.hoplogs.io/cli/v0.1.3/hoplogs_0.1.3_darwin_arm64.tar.gz"
+      sha256 "c78fcfaf5fb2cb7ab1f87d834f2db6769cd54d8c0a5a2baf9dada00bd5412c2c"
     else
-      url "https://downloads.hoplogs.io/cli/v0.1.2/hoplogs_0.1.2_darwin_amd64.tar.gz"
-      sha256 "9fe443d2177a6e6c2ea4f8868fb0b68a727713d8c2999d555905f67cd717371b"
+      url "https://downloads.hoplogs.io/cli/v0.1.3/hoplogs_0.1.3_darwin_amd64.tar.gz"
+      sha256 "7fc4340ca8d59f78143a4c24e3c65ddc0b6e2d79d824b66496e287e8b2409628"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://downloads.hoplogs.io/cli/v0.1.2/hoplogs_0.1.2_linux_arm64.tar.gz"
-      sha256 "d9c27eb4763ea2714ca03fd770e61cc5341fd57989c2f3e17f1839e580ccd6f6"
+      url "https://downloads.hoplogs.io/cli/v0.1.3/hoplogs_0.1.3_linux_arm64.tar.gz"
+      sha256 "a7dfc8e45c2731db5422483dc5bf1868b1b41a7c52fcf0c5f5fea6f57285f306"
     elsif Hardware::CPU.arm?
-      url "https://downloads.hoplogs.io/cli/v0.1.2/hoplogs_0.1.2_linux_armv7.tar.gz"
-      sha256 "83abf6a81bcd0a9b8f588cd5af0a7a87667f5e4726f32b33a145a630dbe1a1f6"
+      url "https://downloads.hoplogs.io/cli/v0.1.3/hoplogs_0.1.3_linux_armv7.tar.gz"
+      sha256 "4a1c278793a3ef65a5acd77898c58d180fb63b0653c59e25ec6260f5306e021a"
     else
-      url "https://downloads.hoplogs.io/cli/v0.1.2/hoplogs_0.1.2_linux_amd64.tar.gz"
-      sha256 "12b44bea85fde1de1025e35e57894f53970337f1a1be1e195c2f8fb57709b23b"
+      url "https://downloads.hoplogs.io/cli/v0.1.3/hoplogs_0.1.3_linux_amd64.tar.gz"
+      sha256 "2fd0d41793b215b6df72072b8485962b46c63c4281d0ffd78b347ae9a812c681"
     end
   end
 
