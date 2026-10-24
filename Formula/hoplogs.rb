@@ -2,28 +2,28 @@
 class Hoplogs < Formula
   desc "HopLogs from the terminal: status, incidents, pages, beacons and heartbeats"
   homepage "https://hoplogs.io"
-  version "0.1.3"
+  version "0.1.4"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://downloads.hoplogs.io/cli/v0.1.3/hoplogs_0.1.3_darwin_arm64.tar.gz"
-      sha256 "c78fcfaf5fb2cb7ab1f87d834f2db6769cd54d8c0a5a2baf9dada00bd5412c2c"
+      url "https://downloads.hoplogs.io/cli/v0.1.4/hoplogs_0.1.4_darwin_arm64.tar.gz"
+      sha256 "7710afb38735fc7c7cc127ed5869245ae31d28d4a8b1bbc421c734f2a3652aa9"
     else
-      url "https://downloads.hoplogs.io/cli/v0.1.3/hoplogs_0.1.3_darwin_amd64.tar.gz"
-      sha256 "7fc4340ca8d59f78143a4c24e3c65ddc0b6e2d79d824b66496e287e8b2409628"
+      url "https://downloads.hoplogs.io/cli/v0.1.4/hoplogs_0.1.4_darwin_amd64.tar.gz"
+      sha256 "ff8410c483acc65e2ebe1191b44ab3340ba8cff8dcbfc9e78845748cc5f7d241"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://downloads.hoplogs.io/cli/v0.1.3/hoplogs_0.1.3_linux_arm64.tar.gz"
-      sha256 "a7dfc8e45c2731db5422483dc5bf1868b1b41a7c52fcf0c5f5fea6f57285f306"
+      url "https://downloads.hoplogs.io/cli/v0.1.4/hoplogs_0.1.4_linux_arm64.tar.gz"
+      sha256 "ce131ab06e6a6c04cc947dbc2ef5066efaaed19cd5ee51466793b9da13de9057"
     elsif Hardware::CPU.arm?
-      url "https://downloads.hoplogs.io/cli/v0.1.3/hoplogs_0.1.3_linux_armv7.tar.gz"
-      sha256 "4a1c278793a3ef65a5acd77898c58d180fb63b0653c59e25ec6260f5306e021a"
+      url "https://downloads.hoplogs.io/cli/v0.1.4/hoplogs_0.1.4_linux_armv7.tar.gz"
+      sha256 "53b70919b203e7f9844fe2dd0364fd3c2a190b9dcffd95ade6f20c5e20b83e55"
     else
-      url "https://downloads.hoplogs.io/cli/v0.1.3/hoplogs_0.1.3_linux_amd64.tar.gz"
-      sha256 "2fd0d41793b215b6df72072b8485962b46c63c4281d0ffd78b347ae9a812c681"
+      url "https://downloads.hoplogs.io/cli/v0.1.4/hoplogs_0.1.4_linux_amd64.tar.gz"
+      sha256 "8509cfee61e0f5d0c5d1efbbdd3777d70011a5fd22e16e7f66c19071bad247cf"
     end
   end
 
