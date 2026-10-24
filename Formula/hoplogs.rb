@@ -2,28 +2,28 @@
 class Hoplogs < Formula
   desc "HopLogs from the terminal: status, incidents, pages, beacons and heartbeats"
   homepage "https://hoplogs.io"
-  version "0.1.4"
+  version "0.1.5"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://downloads.hoplogs.io/cli/v0.1.4/hoplogs_0.1.4_darwin_arm64.tar.gz"
-      sha256 "7710afb38735fc7c7cc127ed5869245ae31d28d4a8b1bbc421c734f2a3652aa9"
+      url "https://downloads.hoplogs.io/cli/v0.1.5/hoplogs_0.1.5_darwin_arm64.tar.gz"
+      sha256 "76f58b1a18cd6d5d1d152205736ace0c52be630707800f6415a011222da509df"
     else
-      url "https://downloads.hoplogs.io/cli/v0.1.4/hoplogs_0.1.4_darwin_amd64.tar.gz"
-      sha256 "ff8410c483acc65e2ebe1191b44ab3340ba8cff8dcbfc9e78845748cc5f7d241"
+      url "https://downloads.hoplogs.io/cli/v0.1.5/hoplogs_0.1.5_darwin_amd64.tar.gz"
+      sha256 "9321a5eed53c0308ff3c2ba2c84c89c997395f61a5269c03620d1047d68c4eee"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://downloads.hoplogs.io/cli/v0.1.4/hoplogs_0.1.4_linux_arm64.tar.gz"
-      sha256 "ce131ab06e6a6c04cc947dbc2ef5066efaaed19cd5ee51466793b9da13de9057"
+      url "https://downloads.hoplogs.io/cli/v0.1.5/hoplogs_0.1.5_linux_arm64.tar.gz"
+      sha256 "a79cc1436a88acf7a49136308d72fa314e0982c93ca438966753d2d38a20ec0e"
     elsif Hardware::CPU.arm?
-      url "https://downloads.hoplogs.io/cli/v0.1.4/hoplogs_0.1.4_linux_armv7.tar.gz"
-      sha256 "53b70919b203e7f9844fe2dd0364fd3c2a190b9dcffd95ade6f20c5e20b83e55"
+      url "https://downloads.hoplogs.io/cli/v0.1.5/hoplogs_0.1.5_linux_armv7.tar.gz"
+      sha256 "a6afc02b8d6657096a25b64b636b542876fd54fb0d4ff1148f28da644f68493c"
     else
-      url "https://downloads.hoplogs.io/cli/v0.1.4/hoplogs_0.1.4_linux_amd64.tar.gz"
-      sha256 "8509cfee61e0f5d0c5d1efbbdd3777d70011a5fd22e16e7f66c19071bad247cf"
+      url "https://downloads.hoplogs.io/cli/v0.1.5/hoplogs_0.1.5_linux_amd64.tar.gz"
+      sha256 "d229d59dab51e34f634bffb71c144aec1014caf5b50cad9b476d6f1ef994d408"
     end
   end
 
