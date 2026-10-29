@@ -2,28 +2,28 @@
 class Hoplogs < Formula
   desc "HopLogs from the terminal: status, incidents, pages, beacons and heartbeats"
   homepage "https://hoplogs.io"
-  version "0.1.5"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://downloads.hoplogs.io/cli/v0.1.5/hoplogs_0.1.5_darwin_arm64.tar.gz"
-      sha256 "76f58b1a18cd6d5d1d152205736ace0c52be630707800f6415a011222da509df"
+      url "https://downloads.hoplogs.io/cli/v0.2.0/hoplogs_0.2.0_darwin_arm64.tar.gz"
+      sha256 "aa082a49bc2cf219a0642f40b0ab01ef3ec4e6f1af81ecff90d66e83efdb3080"
     else
-      url "https://downloads.hoplogs.io/cli/v0.1.5/hoplogs_0.1.5_darwin_amd64.tar.gz"
-      sha256 "9321a5eed53c0308ff3c2ba2c84c89c997395f61a5269c03620d1047d68c4eee"
+      url "https://downloads.hoplogs.io/cli/v0.2.0/hoplogs_0.2.0_darwin_amd64.tar.gz"
+      sha256 "dfc639782d5760cf10148c24956a1b3c2aa541c696da079c69617c0985938490"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://downloads.hoplogs.io/cli/v0.1.5/hoplogs_0.1.5_linux_arm64.tar.gz"
-      sha256 "a79cc1436a88acf7a49136308d72fa314e0982c93ca438966753d2d38a20ec0e"
+      url "https://downloads.hoplogs.io/cli/v0.2.0/hoplogs_0.2.0_linux_arm64.tar.gz"
+      sha256 "7a384972b368b3871a3e9e55a5d0dd7e2bf21825901fa7c9b0125bb36feb324b"
     elsif Hardware::CPU.arm?
-      url "https://downloads.hoplogs.io/cli/v0.1.5/hoplogs_0.1.5_linux_armv7.tar.gz"
-      sha256 "a6afc02b8d6657096a25b64b636b542876fd54fb0d4ff1148f28da644f68493c"
+      url "https://downloads.hoplogs.io/cli/v0.2.0/hoplogs_0.2.0_linux_armv7.tar.gz"
+      sha256 "aed7d250e69ae69510c3d040318782a9e31df8231364509460c5f9f6aa0b8864"
     else
-      url "https://downloads.hoplogs.io/cli/v0.1.5/hoplogs_0.1.5_linux_amd64.tar.gz"
-      sha256 "d229d59dab51e34f634bffb71c144aec1014caf5b50cad9b476d6f1ef994d408"
+      url "https://downloads.hoplogs.io/cli/v0.2.0/hoplogs_0.2.0_linux_amd64.tar.gz"
+      sha256 "7a01668e5724bb4d3f60ffff1500a05dc758b53bfb7d2041b404953fda6ee167"
     end
   end
 
