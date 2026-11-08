@@ -2,28 +2,28 @@
 class Hoplogs < Formula
   desc "HopLogs from the terminal: status, incidents, pages, beacons and heartbeats"
   homepage "https://hoplogs.io"
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://downloads.hoplogs.io/cli/v0.2.0/hoplogs_0.2.0_darwin_arm64.tar.gz"
-      sha256 "aa082a49bc2cf219a0642f40b0ab01ef3ec4e6f1af81ecff90d66e83efdb3080"
+      url "https://downloads.hoplogs.io/cli/v0.3.0/hoplogs_0.3.0_darwin_arm64.tar.gz"
+      sha256 "f04b29570525322b8a3dcf59422e6fb54c04dcf5ec6d01aae5cbc0a762ebc1fc"
     else
-      url "https://downloads.hoplogs.io/cli/v0.2.0/hoplogs_0.2.0_darwin_amd64.tar.gz"
-      sha256 "dfc639782d5760cf10148c24956a1b3c2aa541c696da079c69617c0985938490"
+      url "https://downloads.hoplogs.io/cli/v0.3.0/hoplogs_0.3.0_darwin_amd64.tar.gz"
+      sha256 "f93383d7de25f53cdbeae0b80ec13ba4294785973fcd6f41b4c1dbb1d42c72ae"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://downloads.hoplogs.io/cli/v0.2.0/hoplogs_0.2.0_linux_arm64.tar.gz"
-      sha256 "7a384972b368b3871a3e9e55a5d0dd7e2bf21825901fa7c9b0125bb36feb324b"
+      url "https://downloads.hoplogs.io/cli/v0.3.0/hoplogs_0.3.0_linux_arm64.tar.gz"
+      sha256 "d4038b9a86529aecda43a999460079fc934e1cea9b3538c8df3d8e8a8403e03c"
     elsif Hardware::CPU.arm?
-      url "https://downloads.hoplogs.io/cli/v0.2.0/hoplogs_0.2.0_linux_armv7.tar.gz"
-      sha256 "aed7d250e69ae69510c3d040318782a9e31df8231364509460c5f9f6aa0b8864"
+      url "https://downloads.hoplogs.io/cli/v0.3.0/hoplogs_0.3.0_linux_armv7.tar.gz"
+      sha256 "c7d6a25498b3983293ac40e6cf138ec1a11b58cabaf43f7bd07e01c2841b3314"
     else
-      url "https://downloads.hoplogs.io/cli/v0.2.0/hoplogs_0.2.0_linux_amd64.tar.gz"
-      sha256 "7a01668e5724bb4d3f60ffff1500a05dc758b53bfb7d2041b404953fda6ee167"
+      url "https://downloads.hoplogs.io/cli/v0.3.0/hoplogs_0.3.0_linux_amd64.tar.gz"
+      sha256 "c445ff91620005bee4e5aa3d4b3a08b35cd8d64b9535912832bf8754b02f1af7"
     end
   end
 
