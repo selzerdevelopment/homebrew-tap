@@ -2,28 +2,28 @@
 class Hoplogs < Formula
   desc "HopLogs from the terminal: status, incidents, pages, beacons and heartbeats"
   homepage "https://hoplogs.io"
-  version "0.3.0"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://downloads.hoplogs.io/cli/v0.3.0/hoplogs_0.3.0_darwin_arm64.tar.gz"
-      sha256 "f04b29570525322b8a3dcf59422e6fb54c04dcf5ec6d01aae5cbc0a762ebc1fc"
+      url "https://downloads.hoplogs.io/cli/v0.4.0/hoplogs_0.4.0_darwin_arm64.tar.gz"
+      sha256 "c5578607abf1cc35117e97ef013fca3d5d9f6e8b4c131f77d6279ad459101154"
     else
-      url "https://downloads.hoplogs.io/cli/v0.3.0/hoplogs_0.3.0_darwin_amd64.tar.gz"
-      sha256 "f93383d7de25f53cdbeae0b80ec13ba4294785973fcd6f41b4c1dbb1d42c72ae"
+      url "https://downloads.hoplogs.io/cli/v0.4.0/hoplogs_0.4.0_darwin_amd64.tar.gz"
+      sha256 "ec2766cc7961966bf9c7951d6ca6e2eeb22f7a7c6b94a06d0e4a2589c5eb11f1"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://downloads.hoplogs.io/cli/v0.3.0/hoplogs_0.3.0_linux_arm64.tar.gz"
-      sha256 "d4038b9a86529aecda43a999460079fc934e1cea9b3538c8df3d8e8a8403e03c"
+      url "https://downloads.hoplogs.io/cli/v0.4.0/hoplogs_0.4.0_linux_arm64.tar.gz"
+      sha256 "4930a4ae032adb74d0c8eb0ffdebc82cb38308bc99240c1102431c3a958aa9b3"
     elsif Hardware::CPU.arm?
-      url "https://downloads.hoplogs.io/cli/v0.3.0/hoplogs_0.3.0_linux_armv7.tar.gz"
-      sha256 "c7d6a25498b3983293ac40e6cf138ec1a11b58cabaf43f7bd07e01c2841b3314"
+      url "https://downloads.hoplogs.io/cli/v0.4.0/hoplogs_0.4.0_linux_armv7.tar.gz"
+      sha256 "3cb3230131adfd7df9d6afc603d9c1c76a79aa8ee21bd3d9789025bfeae01c3e"
     else
-      url "https://downloads.hoplogs.io/cli/v0.3.0/hoplogs_0.3.0_linux_amd64.tar.gz"
-      sha256 "c445ff91620005bee4e5aa3d4b3a08b35cd8d64b9535912832bf8754b02f1af7"
+      url "https://downloads.hoplogs.io/cli/v0.4.0/hoplogs_0.4.0_linux_amd64.tar.gz"
+      sha256 "50d7a039ce9142e01ee1d9e740265d47ab557cfbe12a6f8bc281e0dec74a0fb0"
     end
   end
 
