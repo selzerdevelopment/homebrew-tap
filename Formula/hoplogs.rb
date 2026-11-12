@@ -2,28 +2,28 @@
 class Hoplogs < Formula
   desc "HopLogs from the terminal: status, incidents, pages, beacons and heartbeats"
   homepage "https://hoplogs.io"
-  version "0.4.0"
+  version "2026.11.12.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://downloads.hoplogs.io/cli/v0.4.0/hoplogs_0.4.0_darwin_arm64.tar.gz"
-      sha256 "c5578607abf1cc35117e97ef013fca3d5d9f6e8b4c131f77d6279ad459101154"
+      url "https://downloads.hoplogs.io/cli/v2026.11.12.1/hoplogs_2026.11.12.1_darwin_arm64.tar.gz"
+      sha256 "4e10bf2385d1ee67302030d458596002761da09c94034e2ac19ad088471181bd"
     else
-      url "https://downloads.hoplogs.io/cli/v0.4.0/hoplogs_0.4.0_darwin_amd64.tar.gz"
-      sha256 "ec2766cc7961966bf9c7951d6ca6e2eeb22f7a7c6b94a06d0e4a2589c5eb11f1"
+      url "https://downloads.hoplogs.io/cli/v2026.11.12.1/hoplogs_2026.11.12.1_darwin_amd64.tar.gz"
+      sha256 "d32f1afda375a8ed6e075e0207efe9bd3cdc6e1a70f716979753556c6d8c76fd"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://downloads.hoplogs.io/cli/v0.4.0/hoplogs_0.4.0_linux_arm64.tar.gz"
-      sha256 "4930a4ae032adb74d0c8eb0ffdebc82cb38308bc99240c1102431c3a958aa9b3"
+      url "https://downloads.hoplogs.io/cli/v2026.11.12.1/hoplogs_2026.11.12.1_linux_arm64.tar.gz"
+      sha256 "b0b053a722822d0dbfb0c4155ba55c9ea6cb8ec417d43bf4abf8617adc7e2c30"
     elsif Hardware::CPU.arm?
-      url "https://downloads.hoplogs.io/cli/v0.4.0/hoplogs_0.4.0_linux_armv7.tar.gz"
-      sha256 "3cb3230131adfd7df9d6afc603d9c1c76a79aa8ee21bd3d9789025bfeae01c3e"
+      url "https://downloads.hoplogs.io/cli/v2026.11.12.1/hoplogs_2026.11.12.1_linux_armv7.tar.gz"
+      sha256 "d04518227dac9a2bd954b94c0f3fdc263a0ce95f9b3e9c38cafe28b54487c25b"
     else
-      url "https://downloads.hoplogs.io/cli/v0.4.0/hoplogs_0.4.0_linux_amd64.tar.gz"
-      sha256 "50d7a039ce9142e01ee1d9e740265d47ab557cfbe12a6f8bc281e0dec74a0fb0"
+      url "https://downloads.hoplogs.io/cli/v2026.11.12.1/hoplogs_2026.11.12.1_linux_amd64.tar.gz"
+      sha256 "b61a4d386e004dc51038d60049d5c22f7eb6e36d72e43f5d2d2254069bd982d4"
     end
   end
 
