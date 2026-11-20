@@ -2,28 +2,28 @@
 class Hoplogs < Formula
   desc "HopLogs from the terminal: status, incidents, pages, beacons and heartbeats"
   homepage "https://hoplogs.io"
-  version "2026.11.19.1"
+  version "2026.11.20.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://downloads.hoplogs.io/cli/v2026.11.19.1/hoplogs_2026.11.19.1_darwin_arm64.tar.gz"
-      sha256 "6cfae0b60532930dba167c834bbdd6e44494d72aa8b0f2c07b44b29d0db177fc"
+      url "https://downloads.hoplogs.io/cli/v2026.11.20.1/hoplogs_2026.11.20.1_darwin_arm64.tar.gz"
+      sha256 "63e64a0ca4c0eac280d5f0ef3cc3701e97bed581a81912c331608b3bf3a2522c"
     else
-      url "https://downloads.hoplogs.io/cli/v2026.11.19.1/hoplogs_2026.11.19.1_darwin_amd64.tar.gz"
-      sha256 "b530ef5fb097c3b005da78f2c840fa64d178e05a4095ed86d3ec8b2df394bf0d"
+      url "https://downloads.hoplogs.io/cli/v2026.11.20.1/hoplogs_2026.11.20.1_darwin_amd64.tar.gz"
+      sha256 "67a1813db7204cd8a27e1c4527097f76d5fe7ab1df3117ab9e3e557c057c7aa1"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://downloads.hoplogs.io/cli/v2026.11.19.1/hoplogs_2026.11.19.1_linux_arm64.tar.gz"
-      sha256 "d0715a303825d5bb5ca5a57c4e11490791dc93e9188ecbc35a48d823e7a376b9"
+      url "https://downloads.hoplogs.io/cli/v2026.11.20.1/hoplogs_2026.11.20.1_linux_arm64.tar.gz"
+      sha256 "797274771dc75f5a7059915793818b0f5c14b564c7dbf06daba3c6b6b45bd006"
     elsif Hardware::CPU.arm?
-      url "https://downloads.hoplogs.io/cli/v2026.11.19.1/hoplogs_2026.11.19.1_linux_armv7.tar.gz"
-      sha256 "28d45ecb5b1c84866db8cc0de44d0b6e372534bf61f454e57e06dbff1b22bde8"
+      url "https://downloads.hoplogs.io/cli/v2026.11.20.1/hoplogs_2026.11.20.1_linux_armv7.tar.gz"
+      sha256 "e62d76fe318723eca48c8d2d97866ff707c7a86319d5efc9c66f834a5aa02672"
     else
-      url "https://downloads.hoplogs.io/cli/v2026.11.19.1/hoplogs_2026.11.19.1_linux_amd64.tar.gz"
-      sha256 "2ce7d4f0da07c18cdc33961fde76ca52189cb2ed51eedb92a45776cd2682249f"
+      url "https://downloads.hoplogs.io/cli/v2026.11.20.1/hoplogs_2026.11.20.1_linux_amd64.tar.gz"
+      sha256 "661dd8cc7fc5737579cc2b56322426838435909331a574ac80e67c644d0d5c58"
     end
   end
 
